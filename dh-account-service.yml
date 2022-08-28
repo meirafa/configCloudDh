@@ -1,3 +1,9 @@
 server:
   port: $(PORT:8889)
+  servlet:
+    context-path: /account/
+info:
+  author: dh
+  mail: dh@gmail.com
 message: configuracao padrao com spring config!
+country: Brazil
