@@ -1,0 +1,20 @@
+server:
+  port: 8080
+ 
+ spring:
+  cloud:
+    gateway:
+      default-filters:
+        - name: LogFilter
+      routes:
+        - id: apiUsuarioRoute
+          uri: lb://USUARIO-SERVICE
+          predicates:
+            - Path=/usuario/**
+        - id: accountRoute
+          uri: http://localhos:8080
+          predicates:
+            - Path=/account/**
+        #filters:
+            #- AddRequestHeader=user-request-header, custom-user-request-header
+            #- AddResponseHeader=user-respons-header, custom-user-response-header
