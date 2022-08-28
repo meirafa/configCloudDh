@@ -15,6 +15,6 @@ server:
           uri: http://localhos:8080
           predicates:
             - Path=/account/**
-        #filters:
-            #- AddRequestHeader=user-request-header, custom-user-request-header
-            #- AddResponseHeader=user-respons-header, custom-user-response-header
+          filters:
+            - AddRequestHeader=user-request-header, custom-user-request-header
+            - AddResponseHeader=user-respons-header, custom-user-response-header
