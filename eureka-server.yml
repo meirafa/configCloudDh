@@ -7,6 +7,6 @@ spring:
 
 # configurando eureka apenas para server
 eureka:
-  cliente:
+  client:
     registerWithEureka: false
     fetchRegistry: false
