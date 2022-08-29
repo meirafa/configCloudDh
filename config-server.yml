@@ -6,11 +6,11 @@ spring:
     name: config-server
   cloud:
     config:
-      profiles:
-        active: dev
       server:
         git:
           uri: https://github.com/meirafa/configCloudDh
+  profiles:
+    active: dev
 
 eureka:
   instance:
