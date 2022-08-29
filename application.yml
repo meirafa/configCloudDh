@@ -20,4 +20,5 @@ management:
 info:
   author: Rafaela Lopes Meira S S
   country: Brazil 
-  message: Application Global
+ 
+message: Application Global
