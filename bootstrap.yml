@@ -7,8 +7,12 @@ spring:
  cloud:
    config:
      profile: ${profile:dev}
+     
+#Banco de dados MySQL     
  datasource:
-   url: jdbc:mysql://localhost:3306/microcatalogo
+  #user: 
+  #password:
+   url: jdbc:mysql://localhost:3306/name_database
    driver-class-name: com.mysql.cj.jdbc.Driver
  jpa:
    hibernate:
