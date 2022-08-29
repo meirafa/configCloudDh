@@ -1,0 +1,13 @@
+server:
+  port: $(PORT:8889)
+  servlet:
+    context-path: /exemploRoute/
+    
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888/
+  application:
+    name: exemploRoute-service.yml
+  cloud:
+    config:
+      profile: ${profile:dev}
