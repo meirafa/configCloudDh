@@ -10,17 +10,11 @@ spring:
      
 #Banco de dados MySQL     
  datasource:
-  #user: 
-  #password:
+  #user: username
+  #password: password
    url: jdbc:mysql://localhost:3306/name_database
    driver-class-name: com.mysql.cj.jdbc.Driver
  jpa:
-   hibernate:
-     ddl-auto: update
-   database-platform: org.hibernate.dialect.MySQL8Dialect
-   properties:
-     hibernate:
-       format_sql: true
-       dialect: org.hibernate.dialect.MySQL8Dialect
-       show_sql: true
-       use_sql_comments: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
