@@ -1,0 +1,12 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-service
+
+# configurando eureka apenas para server
+eureka:
+  cliente:
+    registerWithEureka: false
+    fetchRegistry: false
