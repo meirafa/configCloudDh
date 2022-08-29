@@ -3,8 +3,6 @@ server:
 spring:  
   cloud:
     gateway:
-      default-filters:
-        - name: LogFilter
       routes:
         - id: movieRoute
           uri: lb://MOVIE
@@ -17,3 +15,7 @@ spring:
           filters:
             - AddRequestHeader=user-request-header, custom-user-request-header
             - AddResponseHeader=user-respons-header, custom-user-response-header
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty.http.client: DEBUG
