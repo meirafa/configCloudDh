@@ -2,6 +2,10 @@ server:
   port: 8080
  
  spring:
+  config:
+    import: optional:configserver:http://localhost:8888/
+  application:
+    name: api-gateway
   cloud:
     gateway:
       default-filters:
