@@ -9,6 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/meirafa/configCloudDh
+          default-label: main
   profiles:
     active: dev
 
