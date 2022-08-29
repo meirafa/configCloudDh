@@ -1,0 +1,19 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888/
+  application:
+    name: clientRoute
+  cloud:
+    config:
+      profile: ${profile:dev}
+     
+#Banco de dados MySQL     
+ datasource:
+  username: username
+  password: password
+  url: jdbc:mysql://localhost:3306/name_database
+  driver-class-name: com.mysql.cj.jdbc.Driver
+ jpa:
+   show-sql: true
+    hibernate:
+      ddl-auto: update
