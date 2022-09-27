@@ -11,7 +11,7 @@ queue:
     name: CatalogoQueue
   movie:
     name: MovieQueue
-  serie:
+  series:
     name: SerieQueue
 eureka:
   instance:
