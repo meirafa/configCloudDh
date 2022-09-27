@@ -7,7 +7,7 @@ spring:
     host: rabbitmq-service
     port: 5672
 queue:
-  api-catalogo:
+  catalogo:
     name: CatalogoQueue
   movie:
     name: MovieQueue
