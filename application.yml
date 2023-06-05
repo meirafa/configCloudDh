@@ -1,24 +1,9 @@
-spring:
-  zipkin:
-    base-url: http://zipkin-service:9411/
-  rabbitmq:
-    username: guest
-    password: guest
-    host: rabbitmq-service
-    port: 5672
-queue:
-  catalogo:
-    name: CatalogoQueue
-  movie:
-    name: MovieQueue
-  series:
-    name: SerieQueue
 eureka:
   instance:
     hostname: localhost
   client:
     service-url:
-      defaultZone: http://eureka:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 management:
   info:
     env:
@@ -26,16 +11,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: circuitbreakers,circuitbreakerevents,health,info
-  health:
-      circuitbreakers:
-          enabled: true
-  endpoint:
-    health:
-      show-details: always
+        include: "*"
 info:
-  author: Rafaela
-server:
-  port: ${PORT:9999}
-
-message: Generic
+  author: Projeto final backend - Grupo 2
