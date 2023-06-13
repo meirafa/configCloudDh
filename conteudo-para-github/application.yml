@@ -15,7 +15,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: * #asterisco ou health,info
+        include: "*" #asterisco ou health,info
 
 info:
   author: Rafaela Lopes Meira S S
